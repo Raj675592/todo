@@ -1,0 +1,244 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  border: none;
+  border-radius: 8px;
+  color: #28d222;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  
+
+  
+  
+   background: linear-gradient(135deg, #3d33c6, rgb(116, 206, 71)); 
+  transition: background-color 0.1s ease;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  background-size: cover;
+  background-attachment: fixed;
+  transition: background-color 0.5s ease;
+  
+}
+
+.sunny {
+  background: url('https://th.bing.com/th/id/R.81520428813e8ed349d9f52bb1a641eb?rik=7gaulZf%2fJ5DjMw&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f8%2f4%2fd%2f924696-large-sunny-day-background-1920x1080-for-4k-monitor.jpg&ehk=T2sWWp7YSJi%2fb7KKj1HYc18mL8PAZn20y0Fi6PJcBRA%3d&risl=&pid=ImgRaw&r=0.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.snowy {
+  background: url('https://wallpapercave.com/wp/wp3010601.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.rainy {
+  background: url('https://static.vecteezy.com/system/resources/thumbnails/033/645/252/small_2x/drizzle-rainy-day-in-autumn-background-and-wallpaper-generative-ai-photo.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+.container {
+  background-color: rgba(255, 255, 255, 0.9); 
+  border-radius: 15px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  padding: 40px;
+  width: 350px;
+  text-align: center;
+  max-width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #3498db;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #2980b9;
+  outline: none;
+}
+
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+
+#weather {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #34495e;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 22px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+img {
+  width: 80px;
+  height: 80px;
+  margin-top: 20px;
+}
+
+
+#whatsappInputContainer {
+  margin-top: 20px;
+  display: none;
+}
+
+#whatsappNumber {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+
+#sendMessageBtnContainer {
+  margin-top: 20px;
+  display: none;
+}
+
+#sendMessageBtn {
+  width: 100%;
+  padding: 12px;
+  background-color: #25D366; 
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#sendMessageBtn:hover {
+  background-color: #128C7E; 
+}
+
+
+@media (max-width: 480px) {
+  .container {
+      width: 90%;
+      padding: 20px;
+  }
+
+  h1 {
+      font-size: 28px;
+  }
+
+  h2 {
+      font-size: 20px;
+  }
+
+  button, input[type="text"], #sendMessageBtn {
+      padding: 10px;
+  }
+}
+
+
+button:hover, #sendMessageBtn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+
+.container {
+  animation: fadeIn 1s ease-in;
+}
